@@ -1,0 +1,394 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+header {
+	width: 100%;
+	height: 55px;
+	background-color: black;
+	font-family: 'Amatic SC',cursive;
+}
+
+.header-title {
+	width: 200px;
+	height: 50px;
+	float: left;
+	font-family: 'Amatic SC',cursive;
+	font-size: 25px;
+}
+
+.header-text {
+	width: 200px;
+	height: 50px;
+	color: white;
+	display: block;
+	padding: 5px 0 0 50px;
+}
+
+.header-box {
+	width: 400px;
+	height: 40px;
+	padding-top: 10px;
+	float: right;
+	display: inline-block;
+}
+
+.header-menu {
+	color: #C0C0C0;
+	padding: 30px 10px 10px 20px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+
+/* index */
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main {
+	clear: both;
+	width: 100%;
+	height: 100%;
+	background: url('./books2.jpg');
+}
+
+.Title {
+	padding-left: 20px;
+	font-weight: bold;
+	float:left;
+	font-size :20px;
+	font-family: 'Permanent Marker',cursive;
+}
+
+.Body {
+	padding-left: 90px;
+	font-weight: bold;
+	float: left;
+	font-size: 20px;
+	font-family: 'Permanent Marker',cursive;
+}
+
+.box {
+	width: 100%;
+	height: 100%;
+	clear: both;
+}
+
+.title-box {
+	width: 300px;
+	height: 30px;
+	padding-left: 20px;
+	display: inline-block;
+}
+
+.body-box {
+	width: 100px;
+	padding-left: 20px;
+}
+
+.show-box {
+	width: 80px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.edit-box {
+	width: 80px;
+	height: 30px;
+	text-decoration: none;
+	padding-left: 20px;
+	display: inline-block;
+}
+
+.destroy-box {
+	width: 80px;
+	height: 30px;
+	text-decoration: none;
+	padding-left: 20px;
+	display: inline-block;
+}
+
+.post {
+	margin: 15px 10px 15px 15px;
+	padding-left: 5px;
+	clear:both;
+	background-color: #FAFAFA;
+	width: 250px;
+	height: 300px;
+	box-shadow: 5px 5px 10px 2px gray;
+}
+
+.post-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Permanent Marker',cursive;
+	margin : 10px 0 10px 0 ;
+
+}
+
+
+.post-text {
+	padding-top: 10px;
+	font-family: 'Permanent Marker',cursive;
+	font-weight: bold;
+}
+
+.post-comment {
+	font-weight: bold;
+}
+
+/* show */
+
+.main-show {
+	width: 100%;
+	height: 100%;
+	background: url('./books2.jpg');
+}
+
+.show-mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+}
+
+.title-show{
+	font-weight: bold;
+	font-size: 25px;
+	font-family: 'Permanent Marker',cursive;
+	margin: 0 ;
+}
+
+.body-show {
+	font-weight: bold;
+	font-size: 25px;
+	font-family: 'Permanent Marker',cursive;
+}
+
+.body-show-text {
+	width: 500px;
+	white-space: pre;
+}
+
+.show-image {
+	font-weight: bold;
+	font-size: 25px;
+	font-family: 'Permanent Marker',cursive;
+}
+
+.show-text {
+}
+
+/* edit */
+
+main-edit {
+	width: 100%;
+	height: 700px;
+}
+
+.edit-title-title {
+	margin: 0 0 0 0 ;
+	font-size: 25px;
+	font-family: 'Permanent Marker',cursive;
+}
+
+.edit-title-text {
+	font-family: 'Permanent Marker',cursive;
+
+}
+
+.edit-body-text {
+	font-family: 'Permanent Marker',cursive;
+}
+
+.edit-title {
+}
+
+/* top */
+
+.top-box {
+	width: 600px;
+	margin: auto;
+	font-family: Times;
+	text-align: center;
+}
+
+.top-text {
+	font-family: Times;
+	text-align: center;
+	font-weight: bold;
+}
+
+.top-title {
+	width: 400px;
+	margin: auto;
+	font-family: Times;
+}
+
+.top-text-box {
+	width: 1000px;
+	margin: auto;
+}
+
+.log-in-box {
+	width: 500px;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+.log-in {
+	width: 500px;
+	height: 40px;
+	background-color: lime;
+	border-radius: 5px;
+	display: table;
+	text-decoration: none;
+}
+
+.log-in-text {
+	font-size: 15px;
+	font-weight: bold;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.sign-up-box {
+	width: 500px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.sign-up {
+	width: 500px;
+	height: 40px;
+	background-color: aqua;
+	border-radius: 5px;
+	display: table;
+	text-decoration: none;
+}
+
+.sign-up-text {
+	font-size: 15px;
+	font-weight: bold;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.top-text-bottom {
+	text-align: right;
+	margin-top: 0 ;
+}
+
+/* log in */
+
+.main-index {
+	width: 100%;
+	height: 100%;
+	background-image: url('./books2.jpg');
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+}
+
+.test {
+	width: 350px;
+	height: 350px;
+	background-color: #FFFFFF;
+	margin: auto;
+	box-shadow: 0 0 10px #666666;
+}
+
+.login-box {
+	width: 350px;
+	height: 35px;
+	background-color: #000088;
+}
+
+.login-title {
+	font-size: 20px;
+	text-align: center;
+	font-family: Times;
+	padding-top: 5px;
+	color: #FFFFFF;
+}
+
+.field {
+	widows: 350px;
+	padding:10px 0 0 10px;
+	text-align: center;
+}
+
+.login-text {
+	font-size: 10px;
+	text-align: center;
+}
+
+.show-button {
+	text-decoration: none;
+	border: solid 2px green;
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+	box-shadow: 2px 2px 2px 2px #555555;
+	font-family: Times;
+}
+
+.edit-button {
+	text-decoration: none;
+	border: solid 2px blue;
+	border-radius: 5px;
+	background-color: blue;
+	color: white;
+	box-shadow: 2px 2px 2px 2px #555555;
+	font-family: Times;
+}
+
+.destroy-button {
+	text-decoration: none;
+	border: solid 2px red;
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+	box-shadow: 2px 2px 2px 2px #555555;
+	font-family: Times;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	margin-top : 0 ;
+	display: table;
+}
+
+.footer-text {
+	font-size: 12px;
+	font-family: TImes;
+	margin-top: 0;
+	color: #999999;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 15px;
+}
+

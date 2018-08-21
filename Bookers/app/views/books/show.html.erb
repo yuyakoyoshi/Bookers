@@ -1,0 +1,24 @@
+<header>
+	<%= render 'books/list', books: @books %>
+</header>
+
+<main class="main-show">
+  <div class="mask">
+   <div class="show-mask">
+	<p class="title-show">Title:</p>
+	<p class="show-text"><%= @book.title %></p>
+	<p class="body-show">Body:</p>
+	<p class="body-show-text"><%= @book.body %></p>
+	<p class="show-image">image</p>
+	<%= attachment_image_tag @book, :image, :fill, 300, 400, format: 'jpeg' %>
+	<span class="link-show"><%= link_to "edit", edit_book_path(@book.id) %></span> | <span><%= link_to "back", books_path(@book.id) %></span>
+	</div>
+
+  </div>
+</main>
+
+<footer>
+		<p class="footer-text">TEL :XXX-XXXX-XXXX</p>
+		<p class="footer-text">E-mail :XXX@XXX
+		<p class="footer-text">CopyRight Yuya Koyoshi</p>
+</footer>

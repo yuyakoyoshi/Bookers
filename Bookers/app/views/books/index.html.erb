@@ -1,0 +1,60 @@
+<%= render 'books/list', books: @books %>
+
+<div class="index-img-box">
+</div>
+
+<main class="main-index" clearfix>
+	<div class="mask">
+		<p class="Title">Title</p>
+		<div class="box clearfix">
+
+			<div class="title-box">
+				<% @books.each do |book| %>
+				<table class="top-title"><%= book.title%></table>
+				<% end %>
+			</div>
+
+
+
+		<div class="show-box">
+			<% @books.each do |book| %>
+			<table class="top-title"><%= link_to "show", book_path(book.id), :class => 'show-button' %></table>
+			<% end %>
+		</div>
+
+		<div class="edit-box">
+			<% @books.each do |book| %>
+			<table class="top-title"><%= link_to "edit", edit_book_path(book.id), :class => 'edit-button' %></table>
+			<% end %>
+		</div>
+
+		<div class="destroy-box">
+			<% @books.each do |book| %>
+			<table class="top-title"><%= link_to "destroy", destroy_book_path(book.id), :class => 'destroy-button', method: :delete, data: {confirm: "削除してもよろしいですか？"}%></table>
+			<% end %>
+		</div>
+
+	</div>
+
+<div class="post">
+	<p class="post-title">New Book</p>
+	<%= form_for(@book) do |f| %></p>
+	<div class="post-text">Title</div>
+	<%= f.text_field :title %>
+	<div class="post-text">Body</div>
+	<%= f.text_area :body %>
+	<div class="post-text">image</div>
+	<%= f.attachment_field :image%>
+	<div><%= f.submit 'Create Book' %></div>
+	<% end %>
+</div>
+
+</div>
+
+</main>
+
+<footer>
+		<p class="footer-text">TEL :XXX-XXXX-XXXX</p>
+		<p class="footer-text">E-mail :XXX@XXX
+		<p class="footer-text">CopyRight Yuya Koyoshi</p>
+</footer>
